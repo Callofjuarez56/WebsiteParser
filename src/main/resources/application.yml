@@ -1,0 +1,14 @@
+url: http://pogoda-service.ru/archive_gsod_res.php?country=RS&station=276120&datepicker_beg=01.12.2012&datepicker_end=01.12.2022&bsubmit=Посмотреть
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
