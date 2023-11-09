@@ -1,5 +1,6 @@
 package ru.kurochkin.WebsiteParser.parser.task;
 
+import io.micrometer.core.annotation.Timed;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -25,6 +26,7 @@ public class ParseTask {
     String url;
 
     @Scheduled(fixedDelay = 10000)
+    @Timed
     public void parsLatestWeather() throws IOException {
         Document document = Jsoup.connect(url)
                 .userAgent("Yandex")

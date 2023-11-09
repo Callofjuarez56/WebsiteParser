@@ -1,5 +1,6 @@
 package ru.kurochkin.WebsiteParser.parser.controller;
 
+import io.micrometer.core.annotation.Timed;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
