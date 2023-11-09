@@ -8,6 +8,7 @@ class WebsiteParserApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
